@@ -1,0 +1,10 @@
+# Optional: run MongoDB with Docker instead of installing it
+services:
+  mongo:
+    image: mongo:7
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+volumes:
+  mongo-data:
